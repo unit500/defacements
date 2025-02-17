@@ -11,3 +11,10 @@
 </pre>
 
 Web Defacements - Mirroring Archive 
+
+Web Site Reports:
+https://unit500.python-myth.info/
+
+Telegram: 
+Real Time reports - t.me/deface500
+
