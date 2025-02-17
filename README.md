@@ -16,5 +16,5 @@ Web Site Reports:
 https://unit500.python-myth.info/
 
 Telegram: 
-Real Time reports - t.me/deface500
+Real Time reports - https://t.me/deface500
 
