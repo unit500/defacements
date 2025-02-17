@@ -1,0 +1,35 @@
+
+.textDarkShadow	{
+	text-shadow: -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000, 2px 2px 4px #000;
+}
+
+
+@media (min-width:768px) {
+	
+.desktop {
+	display:inline-table;
+}
+
+.mobile {
+	display:none !important;
+}
+
+	
+}
+
+@media (max-width:768px) {
+	
+.desktop {
+	display:none !important;	
+}
+
+.mobile {
+	display:inline-table;
+}
+	
+.brand-panel	{
+	background-image: none !important;
+}
+
+
+}
