@@ -1,0 +1,91 @@
+.js-form-item.form-item.js-form-type-select.form-item-best-6-subjects-items-0-subject.js-form-item-best-6-subjects-items-0-subject.form-no-label.form-group{
+    width: 225px; 
+}
+
+#edit-best-6-subjects-items-0-grade{
+    width: 105px;
+}
+
+.hide {
+    display: none;
+}
+
+input[name='subject_details_manual[items][0][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][1][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][2][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][3][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][4][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][5][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][6][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][7][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][8][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][9][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][10][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][11][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][12][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][13][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+input[name='subject_details_manual[items][14][grade_points]'] {
+    pointer-events: none;
+    background-color: #e9ecef;
+    opacity: 1
+}
+
+#webform-submission-contact-node-36-add-form{
+    margin-top: 100%;
+}
