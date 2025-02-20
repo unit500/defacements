@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HACKED BY YUNUS_EMRE</title>
+<style>
+        body {
+            background: black;
+            color: red;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            margin: 0;
+            overflow: hidden;
+        }
+        #bayrak {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            opacity: 0.2;
+        }
+        #isimler {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+        @keyframes fade {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .isim {
+            display: none;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .show {
+            display: block;
+            animation: fade 3s linear;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+<!-- İLETİSİM  Bilgileri -->
+<!-- Telegram: @BYYARAKA -->
+<!-- Resmi Site: yunusemre.xyz -->
+<!-- Instagram: https://www.instagram.com/offfical_yunus_emre -->
+</head>
+<body>
+<img alt="Türk Bayrağı" id="bayrak" src="images/Flag_of_Turkey.svg"/>
+<div id="isimler"></div>
+<div class="footer" onclick="window.location.href='https://www.msb.gov.tr/SehitVefat/Sehitlerimiz'">
+        HACKED BY YUNUS_EMRE | TÜM ŞEHİTLERİMİZİ RAHMETLE ANIYORUZ
+    </div>
+<audio id="muzik" loop="">
+<source src="https://yunusemre.xyz/index/index.mp3" type="audio/mpeg"/>
+</audio>
+<script>
+        const isimler = [
+            "Uğurcan IŞIK", "Eren TAŞKIN", "Mert Can SÜMBÜL", "Halil SELTAN", "Yusuf SOFİOĞLU",
+            "Yusuf GÜRLER", "Oktay SALAR", "Tarık TARCAN", "Enes KOÇ", "Rıdvan SAĞDIÇ",
+            "Tevfik Yasin KESER", "Müslüm ALTINTAŞ", "Adil KABAKLI", "Sedat SORGUN",
+            "Süleyman SUNGUR", "Selim GEDİK", "Volkan SOY", "Cihat ŞENGİL", "Caner MAYENDAĞI",
+            "Kerim ARSLAN", "Mustafa DAĞLI", "Samet ÇALDIR", "Mehmet GÜNAY", "Abdullah ÇAM"
+        ];
+        
+        const isimlerDiv = document.getElementById("isimler");
+        let index = 0;
+        
+        function gosterIsim() {
+            isimlerDiv.innerHTML = `<div class='isim show'>${isimler[index]}</div>`;
+            index = (index + 1) % isimler.length;
+            setTimeout(gosterIsim, 3000);
+        }
+        
+        window.onload = function() {
+            gosterIsim();
+        };
+        
+        document.body.addEventListener("click", function() {
+            const muzik = document.getElementById("muzik");
+            if (muzik.paused) {
+                muzik.play();
+            }
+        });
+    </script>
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl505435'},{'dcenter':'p3'},{'cp_id':'9878541'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src="js/tccl.min.js"></script></html>
