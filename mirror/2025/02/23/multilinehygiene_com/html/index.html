@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Got PWNED?</title>
+<style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+            padding: 0;
+        }
+
+        /* Hacker-style header (h1) */
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(0, 255, 0);
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+            text-align: center;
+        }
+
+        /* Hacker-style paragraph (p) */
+        p {
+            color: rgb(255, 0, 0);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            letter-spacing: 1px;
+            text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #ff0000;
+            animation: typing 7s steps(50) 1s forwards, removeCursor 8s 1s forwards;
+            text-align: center;
+        }
+
+        /* Typing animation */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Remove the cursor after typing */
+        @keyframes removeCursor {
+            to {
+                border-right: none;
+            }
+        }
+
+        /* Adjust the image size dynamically */
+        .image-container img {
+            width: 80%;
+            max-width: 230px;
+            height: auto;
+            transition: width 0.3s ease-in-out;
+        }
+
+        /* Hacker theme for play button */
+        .audio-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Smaller Styled Play Button */
+        .play-button {
+            background-color: #00ff00;
+            color: black;
+            border: 2px solid #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px; /* Smaller font size */
+            padding: 8px 16px; /* Smaller padding */
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px; /* Slightly smaller letter spacing */
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+            box-shadow: 0 0 15px #00ff00;
+            transition: 0.3s ease;
+        }
+
+        .play-button:hover {
+            background-color: black;
+            color: #00ff00;
+            box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
+        }
+
+        .play-button:active {
+            transform: scale(0.98);
+        }
+
+        /* Hide the audio player */
+        audio {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+    </style>
+</head>
+<body>
+<!-- Audio player for background music, added loop attribute -->
+<audio id="background-audio" loop="" preload="auto">
+<source src="https://audio.jukehost.co.uk/gcHnpPfNsPvuvRNxrWx0NtMsTSLGWjf7" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+    </audio>
+<div class="image-container" id="image-container">
+<center><img alt="Hacker Image" height="290" src="images/1-modified.png"/></center>
+</div>
+<center><h1>PWNED BY YOTA</h1></center>
+<center><p>Initializing... System breach detected. Accessing secure networks. Please wait.</p></center>
+<div class="audio-container">
+<!-- Play/Pause Button for Audio -->
+<button class="play-button" id="play-button">Play Music</button>
+</div>
+<script>
+        // Get references to the audio and button elements
+        const audio = document.getElementById('background-audio');
+        const playButton = document.getElementById('play-button');
+
+        // Function to toggle play/pause and hide the button when audio starts
+        playButton.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play();
+                playButton.textContent = 'Pause Music'; // Change button text
+                playButton.style.display = 'none'; // Hide the button
+            } else {
+                audio.pause();
+                playButton.textContent = 'Play Music'; // Change button text back
+                playButton.style.display = 'inline-block'; // Show the button if paused
+            }
+        });
+
+        // Function to adjust the content and ensure it fits the screen size without changing the layout
+        function adjustForScreen() {
+            const screenWidth = window.innerWidth;
+            const screenHeight = window.innerHeight;
+
+            const image = document.querySelector('.image-container img');
+            const heading = document.querySelector('h1');
+            const paragraph = document.querySelector('p');
+
+            // Make sure the content fits into the screen without changing layout appearance
+            if (screenWidth < 600 || screenHeight < 600) {
+                document.body.style.transform = "scale(0.8)";
+                document.body.style.transformOrigin = "top center";
+            } else {
+                document.body.style.transform = "none";
+            }
+        }
+
+        // Adjust layout on page load and window resize
+        window.addEventListener('load', adjustForScreen);
+        window.addEventListener('resize', adjustForScreen);
+    </script>
+<link href="css/css2" rel="stylesheet"/>
+</body>
+</html>
