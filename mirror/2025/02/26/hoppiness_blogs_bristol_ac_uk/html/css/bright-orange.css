@@ -1,0 +1,39 @@
+/* UOB bright orange theme
+February 2018
+Ben Joyner, Digital Comms */
+
+.site-branding {
+  background-image: url(../../assets/images/bg-b-orange.png);
+}
+
+/* uses version with opacity as overlay on image */
+@media screen and (min-width: 1218px) {
+  .has-header-image .site-branding {
+    background-image: url(../../assets/images/bg-b-orange-opacity.png);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ca5010;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border-color: #ca5010;
+  background: #ca5010;
+}
+/*
+.current_page_parent a {
+  color: #ca5010;
+} */
+
+.entry-title a {
+  color: #ca5010;
+}

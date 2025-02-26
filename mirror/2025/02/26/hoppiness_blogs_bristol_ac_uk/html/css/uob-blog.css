@@ -1,0 +1,1018 @@
+
+/* UOB Blog style
+February 2018
+Ben Joyner, Digital Comms */
+
+/* INTER BRAND FONT */
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter/Inter-Regular.woff2")
+      format("woff2"),
+    url("../assets/fonts/inter/Inter-Regular.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "InterLight";
+  src: url("../assets/fonts/inter/Inter-Light.woff2")
+      format("woff2"),
+    url("../assets/fonts/inter/Inter-Light.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "InterVariable";
+  src: url("../assets/fonts/inter/InterVariable.woff2")
+      format("woff2"),
+    url("../assets/fonts/inter/InterVariable.ttf")
+      format("truetype");
+}
+
+
+/* ICONS */
+@font-face {
+  font-family: "icomoon";
+  src: url("../assets/fonts/icomoon.eot?-130idf");
+  src: url("../assets/fonts/icomoon.eot?#iefix-130idf")
+      format("embedded-opentype"),
+    url("../assets/fonts/icomoon.woff?-130idf")
+      format("woff"),
+    url("../assets/fonts/icomoon.ttf?-130idf")
+      format("truetype"),
+    url("../assets/fonts/icomoon.svg?-130idf#icomoon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ANIMATION */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+html {
+  font-size: 62.5%; /* so we can use REMS as 10s */
+}
+
+body {
+  background: #e5e6e5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: InterVariable, Arial, sans-serif;
+  font-weight: 600;
+  margin: 0;
+  color: #b01c2e;
+}
+
+h1 {
+  line-height: 1.2;
+  font-size: 23px;
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 150%;
+}
+
+h3 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+h4, h5, h6 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+
+.entry-title {
+  font-size: 33px;
+  font-size: 3.3rem;
+  margin-bottom: 5px;
+  line-height: 120%;
+}
+
+
+
+a,
+a:visited {
+  color: #333;
+}
+
+
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.entry-title a {
+  color: #b01c2e;
+}
+
+
+ul, ol {
+  margin-left: 0;
+  padding: 0;
+}
+
+.site-content ul li,
+.site-content ol li,
+#footer-sidebar ul li,
+#footer-sidebar ol li {
+  margin-left: 1.5em;
+}
+
+.wp-caption-text {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+/* FORMS */
+button,
+input,
+select,
+optgroup,
+textarea {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* remove from other stylesheet */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+/* remove from other stylesheet */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #b01c2e;
+  border-radius: 3px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  background: #b01c2e;
+  color: #fff;
+  line-height: 1;
+  padding: 9px 18px;
+}
+
+.subscribe-by-email-submit {
+  padding: 9px 18px!important;
+}
+
+/* bg colours */
+.site-content,
+#primary,
+#primary-full,
+#secondary {
+  background: #fff;
+  padding-bottom: 24px;
+}
+
+.has-header-image .site-header {
+  position: relative;
+}
+
+/* Redundant. Causing issues with search box
+.has-header-image .site-header::after {
+  height: 100px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: -100px;
+  content: " ";
+  /*background: rgba(206, 207, 192, 0.5);
+  background: -moz-linear-gradient(
+    top,
+    rgba(206, 207, 192, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(206, 207, 192, 0.5)),
+    color-stop(100%, rgba(255, 255, 255, 0))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(206, 207, 192, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(206, 207, 192, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(206, 207, 192, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(206, 207, 192, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#cecfc0",
+      endColorstr="#ffffff",
+      GradientType=0
+    );
+}*/
+
+/* ICONS */
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+.menu-item-has-children > a:before,
+.page_item_has_children > a:before,
+.menu-toggle:before {
+  font-family: "icomoon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* LAYOUT */
+.site-content {
+  max-width: 1200px; /* width of overall area */
+  margin: 0 auto;
+  z-index: 20;
+  overflow: hidden;
+  position: relative;
+}
+
+#primary {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 36px;
+}
+
+#primary-full {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 36px;
+}
+
+#secondary {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 36px;
+}
+
+/* to set positioning for shadow generated content */
+#primary,
+#primary-full,
+#secondary {
+  position: relative;
+}
+
+/* Shadows */
+.logo-and-branding::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  left: 5px;
+  width: 40px;
+  top: 2px;
+  height: 400px;
+  /* box-shadow: -5px 0 6px rgba(0, 0, 0, 0.2);*/
+  display: block;
+  transform: rotate(-1deg);
+  -webkit-backface-visibility: hidden; /* to stop jaggedy in chrome */
+}
+
+.logo-and-branding {
+  position: relative;
+}
+
+.logo-and-branding::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  right: 5px;
+  width: 40px;
+  top: 2px;
+  height: 400px;
+  /*box-shadow: 5px 0 6px rgba(0, 0, 0, 0.2);*/
+  display: block;
+  transform: rotate(1deg);
+  -webkit-backface-visibility: hidden; /* to stop jaggedy in chrome */
+}
+
+.site-branding {
+  position: relative;
+}
+
+header {
+  margin-bottom: 0;
+}
+
+/* LOGO */
+.uob-logo-wrapper {
+  background: #fff;
+}
+
+.uob-logo {
+  transform: rotate(0.01deg);
+  display: block;
+  position: relative;
+  z-index: 200;
+}
+
+/* layout padding/gutters */
+.site-main {
+  background: #fff;
+}
+
+/* BRANDING */
+.site-header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 30;
+}
+
+.site-header-image {
+  width: 100%;
+  display: block;
+}
+
+.site-branding {
+  background-image: url(../assets/images/bg-uob-red.png);
+  max-width: 1200px;
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding: 24px 60px 24px 20px;
+}
+
+/* uses version with opacity as overlay on image */
+@media screen and (min-width: 1218px) {
+  .has-header-image .site-branding {
+    background-image: url(../assets/images/bg-uob-red-opacity.png);
+  }
+}
+
+.site-title,
+.site-title a,
+.site-description {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-title {
+  font-family: InterVariable, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 33px;
+  margin: 0;
+  padding: 0;
+  line-height: 120%;
+}
+
+.site-description {
+  margin: 0;
+  padding: 0 5px 0 0;
+}
+
+.site-title + .site-description {
+  margin-top: 5px;
+}
+
+.site-title a:hover {
+  opacity: 0.75;
+}
+
+/* NAVIGATION */
+
+.main-navigation {
+  background: #161b20;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+}
+
+.has-header-image .main-navigation {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.main-navigation,
+.sub-menu,
+.children {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.main-navigation,
+.main-navigation a {
+  color: #fff;
+}
+
+.main-navigation a {
+  padding: 10px 25px;
+  border-right: 1px solid #45494d;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  text-decoration: underline;
+}
+
+/* Current page for top nav only */
+#primary-menu .current_page_item > a,
+#primary-menu .current_page_parent > a  {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+#primary-menu .sub-menu a {
+  border: 0;
+}
+
+.sub-menu a:hover,
+.sub-menu a:focus,
+.children a:hover,
+.children a:focus {
+  border-top: 0 !important;
+  text-decoration: underline;
+}
+
+#primary-menu .menu-item-has-children > a:before,
+#primary-menu .page_item_has_children > a:before {
+  content: "\e014";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+/* positioning of menu */
+.menu-menu-1-container, div#primary-menu {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* sub nav */
+#primary-menu .sub-menu a {
+  background: #161b20;
+}
+
+/* ARTICLE */
+.entry-header {
+  border-bottom: 1px solid #e5e6e5;
+  padding-bottom: 24px;
+}
+
+.entry-meta, .entry-footer {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+/* META */
+.entry-meta {
+  padding-top: 24px;
+  opacity: 0.75;
+}
+
+.entry-title + .entry-meta {
+  padding-top: 0;
+}
+
+.entry-footer {
+  opacity: 0.75;
+}
+
+/* SEARCH */
+.widget_search .search-field {
+  margin-right: -5px;
+}
+
+.widget_search .search-submit {
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.cat-links, .tags-links, .comments-link {
+  margin-right: 0.5em
+}
+
+/* COMMENTS */
+
+.comments-area {
+  border-top: 1px solid #e5e6e5;
+  padding-top: 24px;
+}
+
+/* force new line */
+.comments-area label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.comment-reply-title {
+  font-size: 19px;
+  font-size: 1.9rem;
+}
+
+/* FOOTER */
+#footer-sidebar, .footer-copyright {
+  background: #161b20;
+  color: #eee;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff
+}
+
+
+
+
+#footer-sidebar h1, 
+#footer-sidebar h2, 
+#footer-sidebar h3, 
+#footer-sidebar h4, 
+#footer-sidebar h5, 
+#footer-sidebar h6 {
+  color: #eee;
+}
+
+#footer-sidebar a, .footer-copyright a {
+  color: #eee;
+}
+
+
+
+/* SMALL VIEW */
+
+@media screen and (max-width: 800px) {
+  .site-header {
+    padding-top: 0;
+    z-index: 21;
+  }
+
+  .site-header-image {
+    width: 180%;
+    max-width: 180%;
+    margin-left: -40%;
+    margin-right: -40%;
+    margin-top: 76px;
+  }
+
+  .uob-logo-wrapper {
+    padding: 14px 24px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .uob-logo {
+    width: 165px;
+  }
+
+  .site-branding {
+    background-position: -100px;
+    margin-top: 76px; /* to clear logo and nav */
+  }
+
+  .has-header-image .site-branding {
+    margin-top: 0; /* reset */
+  }
+
+  .menu-toggle {
+    /* background: #000; */
+    background: #fff
+      url("../assets/images/mobile-nav-bg.png")
+      left top;
+    border: 0;
+    padding: 10px 15px 10px 50px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    right: 0;
+    height: 76px;
+    border-radius: 0;
+    outline: none;
+  }
+
+  .menu-toggle:before {
+    content: "\e601";
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 5px;
+    position: relative;
+    display: block;
+  }
+
+  .main-navigation.toggled {
+    z-index: 50;
+  }
+
+  .main-navigation.toggled .menu-menu-1-container:after, .main-navigation.toggled div#primary-menu {
+    content: " ";
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    background: -moz-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    width: 100%;
+    height: 100vh;
+  }
+
+  .main-navigation.toggled .menu-menu-1-container, .main-navigation.toggled div#primary-menu {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .main-navigation li {
+    float: none;
+    border-bottom: 1px solid #45494d;
+    background: #161b20;
+    overflow: hidden;
+  }
+
+  .main-navigation li:last-child {
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-navigation ul:first-child {
+    border-top: 1px solid #45494d;
+  }
+
+  .logo-and-branding {
+    position: static;
+  }
+
+  #primary {
+    padding-bottom: 24px;
+  }
+
+  #primary-full {
+    padding-bottom: 24px;
+  }
+
+  #secondary {
+    border-top: 1px solid #e5e6e5;
+  }
+
+  .main-navigation ul li:hover > ul.sub-menu,
+  .main-navigation ul li:hover > ul.children {
+    width: 100%;
+    display: block;
+    left: 0;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
+
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+  ul.sub-menu li,
+  ul.children li {
+    padding-left: 24px;
+    border-bottom: 0;
+    border-top: 1px solid #45494d;
+  }
+
+  ul.sub-menu li:before,
+  ul.children li:before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    -webkit-border-radius: 0.375rem;
+    border-radius: 0.3rem;
+    height: 0.6rem;
+    width: 0.6rem;
+    margin-right: 0.5rem;
+    background-color: #333;
+  }
+
+  ul.sub-menu a,
+  ul.children a {
+    display: block;
+  }
+
+  /* FOOTER */
+
+  #footer-sidebar > div {
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    padding: 24px 20px 0 20px;
+  }
+
+  .footer-copyright{
+    padding: 20px;
+  }
+}
+
+/* MEDIUM and above */
+@media screen and (min-width: 801px) {
+  .main-navigation {
+    z-index: 35;
+  }
+    
+  .nav-menu li:first-child {
+    border-left: 1px solid #45494d
+  }
+
+  #primary {
+    width: 66.6%;
+    float: left;
+    padding-left: 40px;
+  }
+
+  #primary-full {
+    width: 100%;
+    float: left;
+    padding-left: 40px;
+  }
+
+  #secondary {
+    width: 33.3%;
+    float: right;
+  }
+
+  .site-title {
+    font-size: 43px;
+  }
+
+  .site-content {
+    overflow: visible;
+    border-top: 1px solid #e5e6e5;
+  }
+
+  .site-branding-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+  }
+
+  .site-branding {
+    margin-right: 210px;
+    padding: 30px 40px;
+  }
+
+  .uob-logo-wrapper {
+    background: #fff;
+    position: absolute;
+    padding-right: 40px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+  }
+
+  .uob-logo {
+    width: 165px;
+  }
+
+  .logo-and-branding {
+    width: 100%;
+    /* background: #fff; */
+  }
+
+  /* ordering header content */
+  /* this is preferable to absolute positioning as allows nav to wrap onto two lines if necessary without overlapping content */
+  .site-header {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .main-navigation {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+
+  .site-header-image {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .site-branding-wrapper {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  ul.sub-menu,
+  ul.children {
+    width: 300px;
+  }
+
+#primary-menu ul.sub-menu li,
+#primary-menu ul.children li {
+    width: 100%;
+    border-top: 1px solid #45494d;
+  }
+
+  .menu-item-has-children a,
+  .page_item_has_children a {
+    padding-right: 35px;
+  }
+
+  #footer-sidebar {
+    overflow: auto;
+    display: flex;
+  }
+
+  #footer-sidebar > div {
+    border-right: 1px solid rgba(255,255,255,0.25);
+    padding: 24px 20px 36px 20px;      
+    width: 33.3%
+  }
+
+  .footer-copyright {
+    padding: 24px 20px;
+    border-top: 1px solid rgba(255,255,255,0.25);
+  }
+}
+
+/* CUSTOM LARGE VIEW (this is based on the design) */
+@media screen and (min-width: 1218px) {
+  .has-header-image .site-branding-wrapper {
+    padding-top: 0;
+  }
+
+  .site-content {
+    margin-top: 0;
+    border-top: 0;
+  }
+
+  #primary {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  #primary-full {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .uob-logo {
+    width: 200px;
+  }
+
+  .uob-logo-wrapper {
+    padding: 20px 40px 20px 20px;
+    width: 260px;
+  }
+
+  .site-branding {
+    margin-right: 260px;
+    padding: 30px 40px;
+  }
+
+  .site-branding-wrapper {
+    margin-top: 48px;
+  }
+
+  .has-header-image .site-branding-wrapper {
+    margin-top: 0;
+  }
+
+  .has-header-image .logo-and-branding {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .footer-copyright {
+  margin-bottom: 48px;  
+}
+
+/* Calendar widget */
+.widget.widget_calendar table {
+        margin: 0;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+        line-height: 2.5625;
+        padding: 0;
+        text-align: center;
+}
+
+.widget_calendar caption {
+        font-weight: 900;
+        margin-bottom: 1.75em;
+}
+
+.widget_calendar tbody a {
+        background-color: #007acc;
+        color: #fff;
+        display: block;
+        font-weight: 700;
+}
+
+.widget_calendar tbody a:hover,
+.widget_calendar tbody a:focus {
+        background-color: #686868;
+        color: #fff;
+}
+
