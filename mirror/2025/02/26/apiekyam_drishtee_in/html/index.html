@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Bonzfrozen Love You</title>
+<link crossorigin="anonymous" href="css/normalize.min.css" integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4=" rel="stylesheet"/>
+<link href="css/css" rel="stylesheet" type="text/css"/>
+<style>
+        body {
+            background: url('https://wallpapers.com/images/hd/ghost-background-vyndv0j13qphee7n.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Varela, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: shake 0.5s infinite alternate;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(-2px, 2px); }
+            50% { transform: translate(2px, -2px); }
+            75% { transform: translate(-2px, -2px); }
+            100% { transform: translate(2px, 2px); }
+        }
+
+        .glitch {
+            color: black;
+            font-size: 100px;
+            text-align: center;
+            position: relative;
+            display: block;
+            text-shadow: -2px 0 red, 2px 0 green;
+        }
+
+        .glitch:after, .glitch:before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: transparent;
+            overflow: hidden;
+        }
+
+        .glitch:after {
+            left: 2px;
+            text-shadow: -3px 0 red;
+            animation: noise-anim 2s infinite linear alternate-reverse;
+        }
+
+        .glitch:before {
+            left: -2px;
+            text-shadow: 3px 0 green;
+            animation: noise-anim-2 3s infinite linear alternate-reverse;
+        }
+
+        @keyframes noise-anim {
+            0%, 100% { clip: rect(20px, 9999px, 40px, 0); }
+            50% { clip: rect(60px, 9999px, 80px, 0); }
+        }
+
+        @keyframes noise-anim-2 {
+            0%, 100% { clip: rect(10px, 9999px, 30px, 0); }
+            50% { clip: rect(50px, 9999px, 70px, 0); }
+        }
+    </style>
+</head>
+<body>
+<div>
+<div class="glitch" data-text="Haxed" style="font-size: 168px;">HAxED</div>
+<div class="glitch" data-text="By BONZFROZEN">By BONZFROZEN</div>
+</div>
+</body>
+</html>
