@@ -1,0 +1,7 @@
+#hero .carousel-item::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.0);
+}
+.blanco{
+	color: #fff;
+}
