@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'PF Tempesta Seven';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PF Tempesta Seven'), url('https://fonts.cdnfonts.com/s/7342/pf_tempesta_seven.woff') format('woff');
+}
+@font-face {
+    font-family: 'PF Tempesta Seven';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PF Tempesta Seven'), url('https://fonts.cdnfonts.com/s/7342/pf_tempesta_seven_bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'PF Tempesta Seven Extended';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PF Tempesta Seven Extended'), url('https://fonts.cdnfonts.com/s/7342/pf_tempesta_seven_extended.woff') format('woff');
+}
+@font-face {
+    font-family: 'PF Tempesta Seven Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PF Tempesta Seven Condensed'), url('https://fonts.cdnfonts.com/s/7342/pf_tempesta_seven_condensed.woff') format('woff');
+}
+@font-face {
+    font-family: 'PF Tempesta Seven Compressed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PF Tempesta Seven Compressed'), url('https://fonts.cdnfonts.com/s/7342/pf_tempesta_seven_compressed.woff') format('woff');
+}
+@font-face {
+    font-family: 'PF Tempesta Seven Extended';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PF Tempesta Seven Extended'), url('https://fonts.cdnfonts.com/s/7342/pf_tempesta_seven_extended_bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'PF Tempesta Seven Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PF Tempesta Seven Condensed'), url('https://fonts.cdnfonts.com/s/7342/pf_tempesta_seven_condensed_bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'PF Tempesta Seven Compressed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PF Tempesta Seven Compressed'), url('https://fonts.cdnfonts.com/s/7342/pf_tempesta_seven_compressed_bold.woff') format('woff');
+}
+
+
