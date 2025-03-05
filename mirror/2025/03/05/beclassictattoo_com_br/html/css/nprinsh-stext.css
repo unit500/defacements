@@ -1,0 +1,148 @@
+/*by Nathan Prinsley - www.prinsh.com*/
+/***1nprinsley-text-glitchan***/
+.nprinsley-text-glitchan {
+  font-weight: 700;
+  position: relative;
+  letter-spacing: .025em;
+  text-shadow: .05em 0 0 rgba(255, 0, 0, .75),
+              -.05em -.025em 0 rgba(0, 255, 0, .75),
+              .025em .05em 0 rgba(0, 0, 255, .75);
+  
+  animation: glitch 525ms infinite;
+}
+.nprinsley-text-glitchan::before {
+  animation: glitch 675ms infinite;
+  transform: translate(-.035em, -.025em);
+}
+.nprinsley-text-glitchan::after {
+  animation: glitch 333ms infinite;
+  transform: translate(.035em, .025em);
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: .05em 0 0 rgba(255, 0, 0, .75),
+                -.05em -.025em 0 rgba(0, 255, 0, .75),
+                .025em .05em 0 rgba(0, 0, 255, .75);
+  }
+  14% {
+    text-shadow: .05em 0 0 rgba(255, 0, 0, .75),
+                -.05em -.025em 0 rgba(0, 255, 0, .75),
+                .025em .05em 0 rgba(0, 0, 255, .75);
+  }
+  15% {
+    text-shadow: -.05em -.025em 0 rgba(255, 0, 0, .75),
+                .025em .025em 0 rgba(0, 255, 0, .75),
+                -.05em -.05em 0 rgba(0, 0, 255, .75);
+  }
+  49% {
+    text-shadow: -.05em -.025em 0 rgba(255, 0, 0, .75),
+                .025em .025em 0 rgba(0, 255, 0, .75),
+                -.05em -.05em 0 rgba(0, 0, 255, .75);
+  }
+  50% {
+    text-shadow: .025em .05em 0 rgba(255, 0, 0, .75),
+                .05em 0 0 rgba(0, 255, 0, .75),
+                 0 -.05em 0 rgba(0, 0, 255, .75);
+  }
+  99% {
+    text-shadow: .025em .05em 0 rgba(255, 0, 0, .75),
+                .05em 0 0 rgba(0, 255, 0, .75),
+                 0 -.05em 0 rgba(0, 0, 255, .75);
+  }
+  100% {
+    text-shadow: -.025em 0 0 rgba(255, 0, 0, .75),
+                -.025em -.025em 0 rgba(0, 255, 0, .75),
+                -.025em -.05em 0 rgba(0, 0, 255, .75);
+  }
+}
+@media(prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-delay: 0s !important;
+    animation-delay: -1ms !important;
+    scroll-behavior: auto !important;
+    animation-duration: 1ms !important;
+    transition-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+  }
+}
+/*2nprinsley-text-redan*/
+.nprinsley-text-redan{
+        background: linear-gradient(to right, #ff0000 10%, #f2f2f2 40%, #2a3360 60%, #ff0000 90%);
+        background-size: 200% auto;
+        color: #000;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate 5s linear infinite;
+    }
+/*3nprinsley-text-rainbowan*/
+.nprinsley-text-rainbowan {
+    background: linear-gradient(to right, #ff0000 10%, #ffa000 20%, #ffd400 30%, #78ff00 40%, #00ffc0 50%, #0069ff 60%, #6d03ff 70%, #ff00ba 80%, #ff6ee0 90%, #f00 100%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 3s linear infinite;
+}
+/*4nprinsley-detaxt*/
+.nprinsley-detaxt { 
+-webkit-animation-name: blinker; 
+-webkit-animation-duration: 2s; 
+-webkit-animation-timing-function: linear; 
+-webkit-animation-iteration-count: infinite; 
+-moz-animation-name: blinker; 
+-moz-animation-duration: 1s; 
+-moz-animation-timing-function: linear; 
+-moz-animation-iteration-count: infinite; 
+animation-name: blinker; 
+animation-duration: 1s; 
+animation-timing-function: linear; 
+animation-iteration-count: infinite; 
+} @-moz-keyframes blinker { 
+0% { opacity: 1.0; } 
+50% { opacity: 0.0; } 
+100% { opacity: 1.0; } 
+} @-webkit-keyframes blinker { 
+0% { opacity: 1.0; } 
+50% { opacity: 0.0; } 
+100% { opacity: 1.0; } 
+} @keyframes blinker { 
+0% { opacity: 1.0; } 
+50% { opacity: 0.0; } 
+100% { opacity: 1.0; } 
+}
+/*5nprinsley-text-blupelan*/
+.nprinsley-text-blupelan {
+    background: linear-gradient(to right, #b100ff 10%, #7400ff 20%, #3836ff 30%, #a800ff 40%, #3e40ff 50%, #0069ff 60%, #5c85ff 70%, #0083ff 80%, #c101ff 90%, #9400ff 100%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 5s linear infinite;
+}
+    @keyframes animate{
+      to {
+        background-position: 200% center;
+      }
+    }
+.nprinsley-text{
+-ms-background-clip:text;
+-moz-background-clip:text;
+-webkit-text-fill-color:transparent;
+-ms-text-fill-color:transparent;
+-moz-text-fill-color:transparent;
+}
+.nprinsley-rainbow{
+background: -webkit-linear-gradient( top, #ff0000 20%, #af2dff 40%, #077cff 60%, #18dd00 80%, #00ff9e 100%) repeat;
+-webkit-background-clip:text;
+}
+.nprinsley-blure{
+background: -webkit-linear-gradient( top, #ff0000 20%, #b80000 40%, #5456ff 60%, #161b95 80%,#00ff9e 100%) repeat;
+-webkit-background-clip:text;
+
+}
+/*by Nathan Prinsley - www.prinsh.com*/
+@media screen and (max-width: 500px){center img[style^="width"] {width: 200px!important;}}@media screen and (max-width:720px){img[style^="width"] {width: 250px!important;}}@media screen and (min-width:720px){center img[style^="width"] {max-width:300px;width: 20%!important;}}
