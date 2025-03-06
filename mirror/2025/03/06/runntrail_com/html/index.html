@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HACKED BY CYBER GHOST TEAM</title>
+<link href="css/css" rel="stylesheet"/>
+<style>
+        /* General Styling */
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: 'Chakra Petch', sans-serif;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start; /* Adjusted for better alignment */
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+            padding: 1rem;
+            margin-top: 2rem; /* Added margin for better spacing */
+        }
+
+        .title, .subtitle {
+            margin-top: 8px;
+            letter-spacing: 0.1em;
+        }
+
+        .title {
+            font-family: 'Spectral', serif;
+            font-size: 2rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, #45caff, #ff1b6b);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-top: 1rem; /* Adjusted margin for better positioning */
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, #45caff, #ff1b6b);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            margin-top: 1rem;
+            width: 60%; /* Adjusted width for better scaling */
+            max-width: 200px;
+        }
+
+        a.telegram-link {
+            display: block;
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #45caff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a.telegram-link:hover {
+            color: #ff1b6b;
+            text-shadow: 0 0 10px #ff004c, 0 0 20px #ff1b6b;
+        }
+
+        /* Star Styling */
+        .star {
+            position: absolute;
+            border-radius: 50%;
+            background: #fff;
+            opacity: 0.8;
+            animation: moveStars linear infinite;
+        }
+
+        @keyframes moveStars {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
+        /* Button Styling */
+        .hack-button {
+            font-size: 1rem;
+            color: #ff004c;
+            background-color: transparent;
+            border: 2px solid #ff004c;
+            padding: 10px 20px; /* Adjusted padding for better click area */
+            cursor: pointer;
+            margin-top: 15px;
+            text-shadow: 0 0 5px #ff004c, 0 0 10px #ff1b6b;
+            animation: neonGlow 1.5s ease-in-out infinite alternate;
+            transition: all 0.3s ease;
+        }
+
+        .hack-button:hover {
+            color: #fff;
+            border-color: #ff1b6b;
+            text-shadow: 0 0 10px #ff004c, 0 0 20px #ff1b6b, 0 0 30px #ff004c;
+        }
+
+        @keyframes neonGlow {
+            0% {
+                text-shadow: 0 0 5px #ff004c, 0 0 10px #ff1b6b;
+                border-color: #ff004c;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff1b6b, 0 0 20px #ff004c, 0 0 30px #ff1b6b;
+                border-color: #ff1b6b;
+            }
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.6rem;
+            }
+            .subtitle {
+                font-size: 1rem;
+            }
+            img {
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.4rem;
+            }
+            .subtitle {
+                font-size: 0.9rem;
+            }
+
+            .hack-button {
+                font-size: 0.8rem;
+                padding: 8px 12px;
+            }
+
+            a.telegram-link {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<img alt="Cyber Ghost Logo" src="images/Cyber-Ghost.png"/>
+<div class="title">Hacked by Cyber Ghost Team</div>
+<div class="subtitle">YOUR SECURITY IS LOW</div>
+<div class="subtitle">NO ONE SAID THE INTERNET WAS SAFE</div>
+<div class="subtitle">IT WAS JUST YOU WHO WERE DELUSIONAL AND DIDN'T TAKE PRECAUTIONS.</div>
+<div class="subtitle"></div>
+<a class="telegram-link" href="https://t.me/Team_Cyber_Ghost" target="_blank">Telegram: @Team_Cyber_Ghost</a>
+<button class="hack-button" onclick="toggleMusic()">Play Music</button>
+<audio id="background-music" loop="" src="https://ia800102.us.archive.org/29/items/memory-reboot/Memory%20Reboot.mp3"></audio>
+</div>
+<script>
+        // Generate Stars
+        const numStars = 100;
+        const starsContainer = document.body;
+
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.width = `${Math.random() * 3}px`;
+            star.style.height = star.style.width;
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            star.style.animationDelay = `${Math.random() * 10}s`;
+            starsContainer.appendChild(star);
+        }
+
+        // Music Control
+        function toggleMusic() {
+            const music = document.getElementById('background-music');
+            const button = document.querySelector('.hack-button');
+            if (music.paused) {
+                music.play();
+                button.textContent = 'Pause Music';
+            } else {
+                music.pause();
+                button.textContent = 'Play Music';
+            }
+        }
+    </script>
+</body>
+</html>
