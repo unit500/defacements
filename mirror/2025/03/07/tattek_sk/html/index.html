@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>WHY NOT ME? DOMITI</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { width: 100%; height: 100%; overflow: auto; font-family: 'Courier New', monospace; color: #FF0000; }
+        body { 
+            background: url('https://files.catbox.moe/b9m63n.jpg') center/cover; 
+            display: flex; flex-direction: column; align-items: center; 
+            justify-content: flex-start; text-align: center; padding: 20px;
+        }
+        hr { border: none; height: 4px; width: 70%; margin: 10px auto; 
+            background: linear-gradient(90deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3); }
+        .button { background: #00FFFF; color: #0D0C0C; border: 2px solid #000; padding: 10px 20px; 
+            font-size: 1rem; font-weight: bold; cursor: pointer; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+        .button:hover { background: #00cccc; }
+        .notify { position: fixed; top: 20px; right: 20px; background: #FF0000; color: #FFF; 
+            padding: 10px 20px; border-radius: 5px; font-weight: bold; display: none; }
+        .snowflake { position: absolute; top: -10%; color: #fff; font-size: 1rem; animation: fall linear infinite; }
+        @keyframes fall { from { transform: translateY(0); } to { transform: translateY(110vh); } }
+    </style>
+</head>
+<body>
+<script>
+        const titleText = "[ WHYNOTRIS31? ]";
+        function animateTitle() { 
+            document.title = `[ ${titleText} ]`.split('').slice(1).concat(titleText[0]).join('');
+            setTimeout(animateTitle, 100);
+        }
+        animateTitle();
+
+        function playAudio() { document.getElementById("audio").play(); showNotify("Audio Playing"); }
+        function stopAudio() { const audio = document.getElementById("audio"); audio.pause(); audio.currentTime = 0; showNotify("Audio Stopped"); }
+        
+        function showNotify(message) {
+            const notify = document.getElementById("notify");
+            notify.textContent = message;
+            notify.style.display = "block";
+            setTimeout(() => notify.style.display = "none", 3000);
+        }
+
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.textContent = 'â';
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snowflake.style.opacity = Math.random();
+            snowflake.style.fontSize = Math.random() * 20 + 10 + 'px';
+            document.body.appendChild(snowflake);
+            setTimeout(() => snowflake.remove(), 5000);
+        }
+        setInterval(createSnowflake, 100);
+
+        window.onload = () => alert("WEBSITE DITAKEOVER,HI,ADMIN.PLS FIX YOUR WEBSITE. -RIS");
+    </script>
+<div class="notify" id="notify"></div>
+<pre>
+âââââââââââââââââââââââââââââââââââââ
+ââââ     ââââââ ââââ   ââââ         â
+ââââ    âââââââââââââ âââââ         â
+ââââ    âââââââââââââââââââ         â
+ââââ    âââââââââââââââââââ         â
+ââââ    âââ  ââââââ âââ âââ         â
+ââââ    âââ  ââââââ     âââ         â
+âââââââââ ââââââ âââââââ ââââââââââââ
+âââââââââââââââââââââââââââââââââââââ
+âââââââ  ââââââââââââââââââââââââââââ
+âââââââ  ââââââââââââââââââââââââââââ
+ââââ     âââ  ââââââ  âââââââââââââââ
+ââââ     âââ  ââââââ  âââââââââââââââ
+âââââââââââââââââââââââââââââââââââââ
+    </pre>
+<div style="color:#8000FF; font-weight:bold; text-shadow:2px 2px 5px #000;">HACKED BY RIS31</div>
+<hr/>
+<div style="color:#00FF00; font-weight:bold; text-shadow:2px 2px 5px #FFF;">
+        Aku Hanya Mahukan Ketenangan,<br/>Berdamai Dengan Takdir
+    </div>
+<hr/>
+<div style="color:#FFFFFF; font-weight:bold;">| CALL ME RIS |</div>
+<div style="margin-top: 20px;">
+<button class="button" onclick="playAudio()">Play</button>
+<button class="button" onclick="stopAudio()">Stop</button>
+</div>
+<audio id="audio">
+<source src="https://b.top4top.io/m_3352cnmf00.mp3" type="audio/mpeg"/>
+</audio>
+</body>
+</html>
