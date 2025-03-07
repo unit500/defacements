@@ -1,0 +1,128 @@
+/** === Blockquote === **/
+blockquote cite a {
+    font-style: normal;
+    font-size: 14px;
+    color: #848ca5;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-top: 22px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.details_section figure.wp-block-pullquote.aligncenter blockquote p,
+.details_section figure.wp-block-pullquote.alignwide blockquote p,
+.details_section figure.wp-block-pullquote.alignfull blockquote p,
+figure.wp-block-pullquote.aligncenter blockquote p {
+    font-size: 28px;
+    line-height: 1.6;
+}
+blockquote {
+    color: #525c7c;
+}
+.wp-block-pullquote.alignleft, .wp-block-pullquote.alignright,
+.details_section .wp-block-pullquote.alignleft,
+.details_section .wp-block-pullquote.alignright {
+    padding: 0;
+}
+.details_section .wp-block-pullquote.alignleft blockquote p,
+.details_section .wp-block-pullquote.alignright blockquote p {
+    font-size: 16px;
+    line-height: 1.6em;
+}
+.wp-block-pullquote.alignleft blockquote,
+.wp-block-pullquote.alignright blockquote,
+.details_section .wp-block-pullquote.alignleft blockquote,
+.details_section .wp-block-pullquote.alignright blockquote {
+    padding: 30px 15px 15px 15px !important;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.wp-block-pullquote:before,
+.wp-block-pullquote:after,
+.wp-block-pullquote blockquote:before,
+.wp-block-pullquote blockquote:after {
+    display: none !important;
+}
+.page_wrapper p {
+    font-weight: 400;
+}
+figure.wp-block-pullquote {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+blockquote.wp-block-quote.is-style-large p {
+    font-size: 24px;
+}
+.details_section blockquote p,
+blockquote p {
+    line-height: 26px;
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: #8f9093;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    margin-bottom: 8px !important;
+    text-align: justify;
+}
+.details_section .wp-block-quote.is-style-large,
+.details_section blockquote, blockquote {
+    padding: 70px 34px 40px;
+    margin: 50px 0 !important;
+    border-radius: 6px;
+    background-size: auto;
+    background-color: #ffffff;
+    border-left: 6px solid #fe4b7b;
+    background-position: right bottom -25px;
+    box-shadow: 0px 10px 30px 0px rgba(20, 3, 67, 0.08);
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.details_section blockquote:before, blockquote:before {
+    content: "\f10d";
+    font-size: 30px;
+    color: #fe4b7b;
+    padding-bottom: 4px;
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 28px;
+}
+.details_section blockquote:after, blockquote:after {
+    right: 0px;
+    opacity: 0.1;
+    bottom: -30px;
+    line-height: 1;
+    font-size: 110px;
+    content: "";
+    font-weight: 900;
+    position: absolute;
+    color: #fe4b7b;
+    font-family: "Font Awesome 5 Free";
+}
+.details_section .has-medium-font-size {
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.867;
+}
+
+/** === Image / Caption === **/
+.wp-block-gallery .blocks-gallery-image figcaption,
+.wp-block-gallery .blocks-gallery-item figcaption {
+    font-weight: 400;
+    text-align: center;
+}
+.wp-block-media-text,
+.wp-block-media-text.alignwide,
+figure.wp-block-gallery {
+    margin-bottom: 30px;
+}
+
+.wp-block-group.has-background {
+    padding: 15px 15px 1px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,15 @@
+.drdt_sticky_section {
+    transition: 0.5s;
+}
+.drdt_sticky_fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: 0 9px 35px rgb(0 0 0 / 5%);
+}
+.admin-bar .drdt_sticky_fixed {
+    top: 32px;
+}

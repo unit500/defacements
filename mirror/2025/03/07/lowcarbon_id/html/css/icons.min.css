@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "Addons Icon";
+    src: url(../fonts/droitaddons.woff?sgwx5z) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+[class*=" dlicons-"],
+[class^="dlicons-"] {
+    font-family: "Addons Icon" !important;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+.addons-icon:after {
+    content: "\e913";
+    font-family: "Addons Icon" !important;
+    speak: none;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: #e6e9ec;
+    transition: color 0.2s linear;
+}
+.addons-icon.no-absulate:after{position: relative !important;top: 2px;left: -2px;}
+.droit-bar-pro:after {
+    top: 15px;
+    right: unset;
+    margin-left: -7px;
+}
+.elementor-element:hover .dl-icon:after {
+    color: grey;
+}
+.elementor-panel #elementor-panel-category-droit_addons .elementor-element .eicon-lock,
+.elementor-panel .elementor-element > .eicon-lock {
+    right: unset !important;
+    left: 5px !important;
+}
+.DL-icon:before {
+    content: "\e913";
+    color: #cdcfd2;
+}
+.dlicons-accordian:before {
+    content: "\e900";
+}
+.dlicons-blog-post:before {
+    content: "\e901";
+}
+.dlicons-blog:before {
+    content: "\e902";
+}
+.dlicons-card:before {
+    content: "\e903";
+}
+.dlicons-contact-form:before {
+    content: "\e904";
+}
+.dlicons-countdown:before {
+    content: "\e905";
+}
+.dlicons-faq:before {
+    content: "\e906";
+}
+.dlicons-iconbox:before {
+    content: "\e907";
+}
+.dlicons-image-carosel:before {
+    content: "\e908";
+}
+.dlicons-inforbox:before {
+    content: "\e909";
+}
+.dlicons-pricing-Table:before {
+    content: "\e90a";
+}
+.dlicons-process:before {
+    content: "\e90b";
+}
+.dlicons-quote:before {
+    content: "\e90c";
+}
+.dlicons-social-share:before {
+    content: "\e90d";
+}
+.dlicons-Tab:before {
+    content: "\e90e";
+}
+.dlicons-table:before {
+    content: "\e90f";
+}
+.dlicons-Team:before {
+    content: "\e910";
+}
+.dlicons-timeline:before {
+    content: "\e911";
+}
+.dlicons-woocommerce-card:before {
+    content: "\e912";
+}
+.dlicons-animated-title:before {
+  content: "\e914";
+}
+.dlicons-newsticky:before {
+  content: "\e915";
+}
+.dlicons-alert:before {
+  content: "\e916";
+}
+.dlicons-banner:before {
+  content: "\e917";
+}
+
+
+/* start pro icon */@font-face {
+  font-family: 'dlpro';
+  src:  url('../fonts/dlpro.eot?wze8gm');
+  src:  url('../fonts/dlpro.eot?wze8gm#iefix') format('embedded-opentype'),
+    url('../fonts/dlpro.ttf?wze8gm') format('truetype'),
+    url('../fonts/dlpro.woff?wze8gm') format('woff'),
+    url('../fonts/dlpro.svg?wze8gm#dlpro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="dlpro-"], [class*=" dlpro-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dlpro' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dlpro-bar-chart:before {
+  content: "\e91d";
+  color: #585c66;
+}
+.dlpro-Line-Chart:before {
+  content: "\e91e";
+  color: #585c66;
+}
+.dlpro-Pie-Chart:before {
+  content: "\e91f";
+  color: #585c66;
+}
+.dlpro-Polar-Chart:before {
+  content: "\e920";
+  color: #585c66;
+}
+.dlpro-Radar-Chart:before {
+  content: "\e921";
+  color: #585c66;
+}
+.dlpro-section-link:before {
+  content: "\e91c";
+}
+.dlpro-header-footer:before {
+  content: "\e91b";
+}
+.dlpro-column-section .path1:before {
+  content: "\e900";
+  color: rgb(125, 29, 228);
+}
+.dlpro-column-section .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(100, 18, 223);
+}
+.dlpro-column-section .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(124, 28, 228);
+}
+.dlpro-column-section .path4:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(101, 18, 223);
+}
+.dlpro-column-section .path5:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.dlpro-column-section .path6:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.dlpro-column-section .path7:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.dlpro-column-section .path8:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.dlpro-column-section .path9:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.dlpro-column-section .path10:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.dlpro-column-section .path11:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.dlpro-column-section .path12:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.dlpro-css-effect:before {
+  content: "\e90c";
+}
+.dlpro-css-transformation:before {
+  content: "\e90d";
+}
+.dlpro-custom-column:before {
+  content: "\e90e";
+}
+.dlpro-custom-css:before {
+  content: "\e90f";
+}
+.dlpro-droit-copy:before {
+  content: "\e910";
+}
+.dlpro-icon:before {
+  content: "\e911";
+}
+.dlpro-live-copy-paste:before {
+  content: "\e912";
+}
+.dlpro-lottie:before {
+  content: "\e913";
+}
+.dlpro-module .path1:before {
+  content: "\e914";
+  color: rgb(225, 210, 255);
+}
+.dlpro-module .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(103, 67, 255);
+}
+.dlpro-one-page-scroll:before {
+  content: "\e916";
+}
+.dlpro-paralax:before {
+  content: "\e917";
+}
+.dlpro-pop-up:before {
+  content: "\e918";
+}
+.dlpro-sticky-section:before {
+  content: "\e919";
+}
+.dlpro-swatches:before {
+  content: "\e91a";
+}

@@ -1,0 +1,31 @@
+.shop_widget:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.woocommerce ul.cart_list li, .woocommerce ul.product_list_widget li {
+    margin-bottom: 20px;
+}
+
+.woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img {
+    margin-left: 0;
+    width: 80px;
+    float: left;
+    margin-right: 15px;
+}
+
+.woocommerce ul.product_list_widget li a .product-title {
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: color 0.2s linear;
+}
+
+.product_list_widget del{
+    color: inherit;
+    opacity: .5;
+    display: inline-block;
+}
+.product_list_widget del bdi{
+    text-decoration: line-through;
+}
