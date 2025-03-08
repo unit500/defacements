@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Death to Israel</title>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('https://i.postimg.cc/wMWgSpnK/IMG-20250224-061550-654.jpg') no-repeat center center fixed;
+            background-size: cover; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #FFD700;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            padding: 20px;
+            border: 2px solid #FFD700;
+            border-radius: 15px;
+            background: #27272773;
+            align-items: center;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 300px;
+            margin: 0 10px;
+        }
+
+        .glitch {
+            position: relative;
+            display: inline-block;
+            font-size: 36px;
+            color: #FFD700;
+        }
+
+        .glitch::before, .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #FFD700;
+            overflow: hidden;
+            clip: rect(0, 900px, 0, 0);
+            animation: glitch 2s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+            left: 2px;
+            text-shadow: -2px 0 #ff0000;
+            animation: glitch 2s infinite linear alternate-reverse .2s;
+        }
+
+        @keyframes glitch {
+            0% { clip: rect(42px, 9999px, 44px, 0); transform: skew(0.3deg); }
+            100% { clip: rect(45px, 9999px, 90px, 0); transform: skew(0.3deg); }
+        }
+
+        .message {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .contact {
+            margin-top: 40px;
+            font-size: 16px;
+        }
+
+        .music-controls {
+            margin-top: 20px;
+        }
+
+        .button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 5px;
+            background: #FFD700;
+            border: none;
+            color: #1a1a1a;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: #e5c100;
+        }
+    </style>
+</head>
+<body>
+<div class="logos">
+<img alt="Logo 2" class="logo" src="images/20241007-000645.png"/>
+</div>
+<center>
+<div class="container">
+<div class="glitch" data-text="H4CKED BY FATTAH AND LIWAA MOHAMMAD ﷺ">H4CKED BY FATTAH AND LIWAA MOHAMMAD ﷺ</div>
+<div class="message">
+<div class="glitch" data-text="Enemy will be destroyed!">In memory of martyr Sayyed Hassan Nasrallah</div>
+<div class="message">
+                    
+                    We rely on the teachings of Islam, in which human dignity is one of its cornerstones, and killing an innocent person is considered as the killing of all human beings...
+                    We consider the fight against the evil phenomenon of terrorism as an inviolable duty for us, and we will continue our efforts in this great struggle with strength, God willing.
+                    The Zionists act like an arrogant chain dog in this region. Barking and jumping and jumping here and there is the dignity of Zionists
+                    <br/>
+</div>
+</div>
+<div class="contact">
+                #free_palestine #Death_Israel #honest_promise2
+            </div>
+<div class="music-controls">
+<a href="https://t.me/fattah_iri">
+<button class="button">Telegram</button>
+</a>
+</div>
+</div>
+</center>
+<audio id="background-music" loop="" src=""></audio>
+<script>
+        const music = document.getElementById('background-music');
+
+        // پخش موزیک هنگام کلیک روی صفحه
+        document.body.addEventListener('click', function () {
+            music.play();
+        });
+    </script>
+</body>
+</html>
